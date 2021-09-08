@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import Article
 
+# ======================= serializer ============================
 # class ArticleSerializer(serializers.Serializer):
 #     title = serializers.CharField(max_length=100)
 #     author = serializers.CharField(max_length=100)
@@ -19,7 +20,7 @@ from .models import Article
 #         return instance
 
 
-# ====================== MODEL SERIALIZER =========================
+# ====================== MODEL SERIALIZER ========================
 
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
